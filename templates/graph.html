@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{{ ticker | safe }} Closing Prices</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.11.1.min.css" type="text/css" />
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.11.1.min.js"></script>
+    </head>
+
+    <body>
+        <h1>Closing Prices for {{ ticker | safe }}<br>
+        	<a href="/">Back</a></h1>
+
+        {{ div | safe }}
+
+        {{ script | safe }}
+    </body>
+</html>
